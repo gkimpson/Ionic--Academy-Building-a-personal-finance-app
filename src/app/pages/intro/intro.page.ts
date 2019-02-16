@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IonSlide, IonSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-intro',
@@ -8,11 +9,20 @@ import { Component, OnInit } from '@angular/core';
 export class IntroPage implements OnInit {
 
   currency = 'eur';
+  @ViewChild('slides') slides: IonSlides;
 
   constructor() { }
 
   ngOnInit() {
 
+  }
+
+  next() {
+    this.slides.slideNext();
+  }
+
+  save() {
+    
   }
 
 }
