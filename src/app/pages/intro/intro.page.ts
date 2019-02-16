@@ -11,6 +11,11 @@ export class IntroPage implements OnInit {
   currency = 'eur';
   @ViewChild('slides') slides: IonSlides;
 
+  slideOpts = {
+    effect: 'fade',
+    height: '98vh'
+  };
+
   constructor() { }
 
   ngOnInit() {
@@ -21,8 +26,8 @@ export class IntroPage implements OnInit {
     this.slides.slideNext();
   }
 
-  save() {
-    
+  saveandStart() {
+
   }
 
 }
