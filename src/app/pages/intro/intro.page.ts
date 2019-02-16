@@ -13,7 +13,7 @@ export class IntroPage implements OnInit {
 
   slideOpts = {
     effect: 'fade',
-    height: '98vh'
+    initialSlide: 1
   };
 
   constructor() { }
